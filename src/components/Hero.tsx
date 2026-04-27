@@ -26,16 +26,16 @@ export function Hero() {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="glass p-6 rounded-xl">
             <div className="text-3xl mb-4">⚡</div>
-            <h3 className="text-lg font-semibold mb-2">实时同步</h3>
+            <h3 className="text-lg font-semibold mb-2">多设备同步</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              内容即时同步到所有设备，无需等待
+              支持多设备查看，无需等待
             </p>
           </div>
           <div className="glass p-6 rounded-xl">
             <div className="text-3xl mb-4">🔒</div>
             <h3 className="text-lg font-semibold mb-2">安全私密</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              每个用户的数据独立存储，确保隐私安全
+              用户需登录后使用，确保隐私安全
             </p>
           </div>
           <div className="glass p-6 rounded-xl">

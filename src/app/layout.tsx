@@ -9,7 +9,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Cross-Platform Clipboard',
+  title: '跨平台剪贴板',
   description: '跨平台剪贴板 - 在所有设备间同步你的剪贴板内容',
   icons: {
     icon: '/favicon.svg',

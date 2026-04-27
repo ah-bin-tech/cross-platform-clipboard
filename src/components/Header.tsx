@@ -19,7 +19,7 @@ export function Header() {
         <div className="flex flex-col sm:flex-row items-center justify-between">
           <Link className="flex items-center space-x-2" href="/">
             <Logo variant="simple" size={32} />
-            <h1 className="text-xl font-semibold">Cross-Platform Clipboard</h1>
+            <h1 className="text-xl font-semibold">跨平台剪贴板</h1>
           </Link>
 
           <div className="flex items-center space-x-4">
@@ -51,15 +51,9 @@ export function Header() {
                   <div className="flex items-center space-x-2">
                     <a
                       href="/login"
-                      className="px-4 py-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
-                    >
-                      登录
-                    </a>
-                    <a
-                      href="/signup"
                       className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
                     >
-                      注册
+                      登录
                     </a>
                   </div>
                 )}
