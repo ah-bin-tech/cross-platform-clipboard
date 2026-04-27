@@ -76,7 +76,7 @@ import { Logo } from "@/components/Logo";
 ### 3. 在 Next.js Image 组件中使用
 
 ```tsx
-import Image from "next/image";
+import Image from 'next/image'
 
 <Image
   src="/logo-main.svg"
@@ -144,7 +144,7 @@ function ResponsiveHeader() {
         <Logo variant="main" />
       </div>
     </header>
-  );
+  )
 }
 ```
 

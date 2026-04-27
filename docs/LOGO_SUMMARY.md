@@ -29,9 +29,9 @@
 #### Logo 组件 (`src/components/Logo.tsx`)
 ```tsx
 interface LogoProps {
-  variant?: "main" | "icon" | "simple" | "favicon";
-  size?: number;
-  className?: string;
+  variant?: 'main' | 'icon' | 'simple' | 'favicon'
+  size?: number
+  className?: string
 }
 ```
 
@@ -122,7 +122,7 @@ src/
 
 ### 基本使用
 ```tsx
-import { Logo } from "@/components/Logo";
+import { Logo } from '@/components/Logo'
 
 // 在任何页面中使用
 <Logo variant="simple" />

@@ -98,7 +98,7 @@
   "crons": [
     {
       "path": "/api/cleanup",
-      "schedule": "0 */6 * * *"  // 修改这里
+      "schedule": "0 */6 * * *" // 修改这里
     }
   ]
 }

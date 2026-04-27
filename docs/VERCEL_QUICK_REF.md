@@ -74,7 +74,7 @@ curl "https://your-project.vercel.app/api/cleanup?secret=your_secret"
   "crons": [
     {
       "path": "/api/cleanup",
-      "schedule": "0 */6 * * *"  // 修改这里
+      "schedule": "0 */6 * * *" // 修改这里
     }
   ]
 }

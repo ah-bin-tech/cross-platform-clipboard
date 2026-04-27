@@ -134,7 +134,7 @@ on:
   schedule:
     # 每 6 小时执行一次 (Cron 时区为 UTC)
     - cron: '0 */6 * * *'
-  workflow_dispatch:  # 允许手动触发
+  workflow_dispatch: # 允许手动触发
 
 jobs:
   cleanup:
@@ -312,7 +312,7 @@ vercel logs --follow
   "crons": [
     {
       "path": "/api/cleanup",
-      "schedule": "0 19 * * *"  // UTC 19:00 = 中国时间 03:00
+      "schedule": "0 19 * * *" // UTC 19:00 = 中国时间 03:00
     }
   ]
 }

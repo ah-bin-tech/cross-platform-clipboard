@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { Logo } from "@/components/Logo";
+import Link from 'next/link'
+import { Logo } from '@/components/Logo'
 
 export function Hero() {
   return (
@@ -48,5 +48,5 @@ export function Hero() {
         </div>
       </div>
     </section>
-  );
+  )
 }

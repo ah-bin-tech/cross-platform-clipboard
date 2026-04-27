@@ -1,25 +1,27 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import { ThemeProvider } from "@/components/ThemeProvider";
-import { Header } from "@/components/Header";
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import { Toaster } from 'sonner'
+import { Header } from '@/components/Header'
+import { ThemeProvider } from '@/components/ThemeProvider'
 
-const inter = Inter({ subsets: ["latin"] });
+import './globals.css'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Cross-Platform Clipboard",
-  description: "跨平台剪贴板 - 在所有设备间同步你的剪贴板内容",
+  title: 'Cross-Platform Clipboard',
+  description: '跨平台剪贴板 - 在所有设备间同步你的剪贴板内容',
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-    apple: "/favicon.svg",
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
   },
-};
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="zh-CN">
@@ -31,8 +33,9 @@ export default function RootLayout({
               {children}
             </main>
           </div>
+          <Toaster position="top-center" />
         </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }
