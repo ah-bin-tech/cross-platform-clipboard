@@ -39,9 +39,7 @@ USING (auth.uid() = user_id);
 
 -- 创建触发器：自动更新 updated_at 字段
 CREATE OR REPLACE FUNCTION update_updated_at_column()
-RETURNS TRIGGER 
-SECURITY DEFINER
-AS $$
+RETURNS TRIGGER AS $$
 BEGIN
     NEW.updated_at = NOW();
     RETURN NEW;
@@ -53,9 +51,7 @@ ON clipboard_items FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
 
 -- 创建存储过程：清理过期的剪贴板内容
 CREATE OR REPLACE FUNCTION cleanup_expired_clipboard_items()
-RETURNS void 
-SECURITY DEFINER
-AS $$
+RETURNS void AS $$
 BEGIN
     DELETE FROM clipboard_items
     WHERE expires_at IS NOT NULL
@@ -65,9 +61,7 @@ $$ LANGUAGE plpgsql;
 
 -- 创建清理过期的剪贴板内容的函数，返回删除的记录数
 CREATE OR REPLACE FUNCTION cleanup_expired_clipboard_items_with_count()
-RETURNS integer 
-SECURITY DEFINER
-AS $$
+RETURNS integer AS $$
 DECLARE
     deleted_count integer;
 BEGIN

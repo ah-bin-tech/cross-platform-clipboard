@@ -2,11 +2,11 @@ import process from 'node:process'
 import { createClient } from '@supabase/supabase-js'
 
 // 从环境变量中读取 Supabase 凭证
-const supabaseUrl = process.env.SUPABASE_URL!
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_KEY!
 
 if (!supabaseUrl || !supabaseServiceKey) {
-  console.error('错误: 请设置 SUPABASE_URL 和 SUPABASE_SERVICE_KEY 环境变量')
+  console.error('错误: 请设置 NEXT_PUBLIC_SUPABASE_URL 和 SUPABASE_SERVICE_KEY 环境变量')
   process.exit(1)
 }
 
