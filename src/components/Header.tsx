@@ -22,7 +22,7 @@ export function Header() {
             <h1 className="text-xl font-semibold">跨平台剪贴板</h1>
           </Link>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex flex-col sm:flex-row items-center space-x-4">
             <button
               onClick={toggleTheme}
               className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"

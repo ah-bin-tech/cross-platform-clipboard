@@ -185,18 +185,6 @@ export default function CleanupApiPage() {
             </div>
           </div>
         </div>
-
-        <div className="text-center mt-12">
-          <p className="text-gray-600 dark:text-gray-300 text-sm">
-            更多详细信息请查看
-            {' '}
-            <a href="/" className="text-blue-500 hover:underline">首页</a>
-            {' '}
-            或
-            {' '}
-            <a href="/logo" className="text-blue-500 hover:underline">Logo 展示</a>
-          </p>
-        </div>
       </div>
     </div>
   )

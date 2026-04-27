@@ -242,20 +242,6 @@ import { Logo } from "@/components/Logo";
             </div>
           </div>
         </section>
-
-        <div className="text-center mt-12">
-          <p className="text-gray-600 dark:text-gray-300 text-sm">
-            更多信息请查看
-            {' '}
-            <a href="/" className="text-blue-500 hover:underline">首页</a>
-            {' '}
-            或
-            {' '}
-            <a href="#" className="text-blue-500 hover:underline">LOGO.md</a>
-            {' '}
-            文档
-          </p>
-        </div>
       </div>
     </div>
   )
